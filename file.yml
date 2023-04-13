@@ -1,0 +1,9 @@
+---
+- name: the test playbook
+  hosts: all
+  become: true
+  tasks:
+  - name: creating a file in ansible
+    file:
+      path: /home/ansadmin/sofile
+      state: touch

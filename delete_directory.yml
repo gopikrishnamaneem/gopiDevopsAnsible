@@ -1,0 +1,10 @@
+---
+- name: the test playbook
+  hosts: all
+  become: yes
+  tasks:
+  - name: creating a directory
+    file:
+     path: /home/ansadmin/so
+     state: absent
+
